@@ -12,10 +12,10 @@
 <body>
    <div id = "container" name = "container">
       <p id= "heading"> BMI Calculator </p> 
-      <div id="weightContainer">
+      <form id="weightContainer">
          <label name="weight"><span> Weight : </span></label>
          <input name="weight" type="text" min="1" max="500" placeholder="Input weight in kg" id="weight">
-      </div>
+      </form>
 
       <div id="heightContainer">
          <label name="height"><span> Height : </span></label>
@@ -27,7 +27,7 @@
       </div>
 
       <div id="buttonContainer">
-         <button type="submit" id="submit" class="buttons"> Submit </button>
+         <button type="submit" id="submit" class="buttons" onclick= "bmiCalculator()"> Submit </button>
          <button type="reset" id="reset" class="buttons">  Reset </button>
       </div>
    </div>
